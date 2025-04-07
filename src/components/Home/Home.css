@@ -1,0 +1,376 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.slide {
+  position: relative;
+  height: 80vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.slide-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content h5 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features-section {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.feature-paper {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feature-paper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.feature-icon-inner {
+  font-size: 2.5rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  line-height: 1.6;
+}
+
+/* Video Section */
+.video-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.section-subtitle {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.video-container {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.testimonial-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Subject Journey Section */
+.subjects-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.subject-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+}
+
+.subject-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.subject-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  margin-right: 1rem;
+  color: #1976d2;
+}
+
+.subject-description {
+  margin-bottom: 1rem;
+  min-height: 48px;
+}
+
+.subject-stats {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1976d2;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.cta-paper {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cta-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cta-subtitle {
+  margin-bottom: 2.5rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-primary-button {
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(25, 118, 210, 0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-primary-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(25, 118, 210, 0.3);
+}
+
+.cta-secondary-button {
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.cta-secondary-button:hover {
+  transform: translateY(-3px);
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .slide-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .slide-content h5 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-section, .slide {
+    height: 60vh;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .feature-icon-inner {
+    font-size: 2rem;
+  }
+  
+  .cta-paper {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide-content h2 {
+    font-size: 2rem;
+  }
+  
+  .slide-content h5 {
+    font-size: 1rem;
+  }
+  
+  .hero-section, .slide {
+    height: 50vh;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .feature-icon-inner {
+    font-size: 1.8rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cta-primary-button, .cta-secondary-button {
+    width: 100%;
+  }
+} 

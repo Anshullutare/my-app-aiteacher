@@ -1,0 +1,119 @@
+.dashboard-container {
+  padding: 2rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.dashboard-header h4 {
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card .MuiCardContent-root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.progress-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-stat h3 {
+  color: #1a237e;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.quick-actions button {
+  margin: 0.5rem 0;
+}
+
+.activity-list, .task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.activity-item, .task-item {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.activity-item:hover, .task-item:hover {
+  background-color: #e3f2fd;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dashboard-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .dashboard-header {
+    margin-bottom: 2rem;
+  }
+
+  .progress-stat h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .progress-stat {
+    padding: 1rem;
+  }
+
+  .progress-stat h3 {
+    font-size: 1.8rem;
+  }
+
+  .activity-item, .task-item {
+    padding: 0.8rem;
+  }
+} 
